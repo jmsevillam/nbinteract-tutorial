@@ -13862,6 +13862,72 @@ div#notebook {
 
   </div>
 
+  
+
+  <div class="nbinteract-hide_in
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:hide_in</span>
+<span class="k">def</span> <span class="nf">x_vals</span><span class="p">(</span><span class="n">num</span><span class="p">,</span><span class="n">Mes</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">months</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">months</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">==</span><span class="n">Mes</span><span class="p">:</span> <span class="n">i</span><span class="o">=</span><span class="n">j</span>
+    <span class="k">return</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">][</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="o">-</span><span class="n">num</span><span class="p">:]</span>
+<span class="k">def</span> <span class="nf">y_vals</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span><span class="n">num</span><span class="p">,</span><span class="n">Mes</span><span class="p">,</span><span class="n">col</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">months</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">months</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">==</span><span class="n">Mes</span><span class="p">:</span> <span class="n">i</span><span class="o">=</span><span class="n">j</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="n">col</span><span class="p">][</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;El promedio del IPC los ultimos &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">months</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="s1">&#39;s de &#39;</span><span class="o">+</span><span class="n">col</span><span class="o">+</span><span class="s1">&#39; es:&#39;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="o">-</span><span class="n">num</span><span class="p">:]))</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="o">-</span><span class="n">num</span><span class="p">:])</span>
+<span class="n">nbi</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">x_vals</span><span class="p">,</span><span class="n">y_vals</span><span class="p">,</span><span class="n">num</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">Mes</span><span class="o">=</span><span class="n">months</span><span class="p">,</span><span class="n">col</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Viejo M&#39;</span><span class="p">,</span><span class="s1">&#39;Viejo Y&#39;</span><span class="p">,</span><span class="s1">&#39;Nuevo M&#39;</span><span class="p">,</span><span class="s1">&#39;Nuevo Y&#39;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+
+  <div class="output_subarea output_widget_view ">
+    <button class="js-nbinteract-widget">
+      Loading widgets...
+    </button>
+  </div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+  </div>
+
 
 
 <!-- Loads nbinteract package -->
